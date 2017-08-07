@@ -1,0 +1,33 @@
+@import "node_modules/materialize-css/sass/materialize.scss";
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700');
+
+body{
+	background: #fafafa;
+	color: #475053;
+}
+
+.logo{
+	max-width: 90%;
+	padding: 20px;
+}
+
+.portada{
+	max-width: 100%;
+}
+
+#tituloDiv{
+	padding: 1px;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+#footer{
+	padding: 15px;
+	margin-left: 0px;
+	margin-right: 0px;
+	font-size: 12px;
+}
+
+#contenido{
+	text-align: justify;
+}

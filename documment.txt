@@ -1,0 +1,9 @@
+1. Instalar browserify, babelify, babel-preset-es2015, vinyl-source-stream como dependencias de desarrollo:
+
+	- npm install --save browserify babelify babel-preset-es2015 vinyl-source-stream
+
+
+2. Instalar "page" para crear vistas de navegación sin recargar la pagina (formará parte del código final por tanto no necesita -dev).
+    
+    - npm install --save page
+
