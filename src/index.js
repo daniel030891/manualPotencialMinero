@@ -3,11 +3,17 @@ var main = document.getElementById("contenido");
 
 
 page('/presentacion', function(ctx, next){
+	main.height = '600px'	
 	main.src = '/presentacion'
 })
 
 page('/instalacion', function(ctx, next){
+	main.height = '1550px'
 	main.src = '/instalacion'
+})
+
+page('/componentes', function(ctx, next){
+	main.src = '/componentes'
 })
 
 page('/directorios', function(ctx, next){
@@ -19,11 +25,17 @@ page('/variables', function(ctx, next){
 })
 
 page('/potencialminero', function(ctx, next){
+	main.height = '600px'
 	main.src = '/potencialminero'
 })
 
 page('/consideraciones', function(ctx, next){
 	main.src = '/consideraciones'
+})
+
+page('/tutorial', function(ctx, next){
+	main.height = '600px'
+	main.src = '/tutorial'
 })
 
 page();

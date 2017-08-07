@@ -27,6 +27,10 @@ app.get('/instalacion', function(req, res){
 	res.render("instalacion")
 })
 
+app.get('/componentes', function(req, res){
+	res.render("componentes")
+})
+
 app.get('/directorios', function(req, res){
 	res.render("directorios")
 })
@@ -41,6 +45,10 @@ app.get('/potencialminero', function(req, res){
 
 app.get('/consideraciones', function(req, res){
 	res.render("consideraciones")
+})
+
+app.get('/tutorial', function(req, res){
+	res.render("tutorial")
 })
 
 

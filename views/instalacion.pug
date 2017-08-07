@@ -1,7 +1,34 @@
-.container
-  .col.s12(style='text-align: justify')
-    h4 Instalación
-    p
-      | Nunc non justo eget massa condimentum consectetur. Donec egestas sit amet turpis non pharetra. Proin mauris dui, porta sit amet ex sit amet, tristique rhoncus turpis. Vestibulum eget lorem ac mi porta sodales sed et risus. Aliquam aliquet vitae metus vel convallis. Praesent fringilla dolor non euismod volutpat. Etiam congue, turpis vel congue tempus, lacus elit sodales neque, vitae malesuada dolor nibh at tellus.
-script(src='http://code.jquery.com/jquery-3.2.1.min.js', integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=', crossorigin='anonymous')
-script(src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js')
+doctype html
+html
+  head
+    meta(name='viewport', content='width=device-width, initial-scale=1.0, user-scalable=no')
+    meta(charset='utf-8')
+    link(rel='stylesheet', type='text/css', href='app.css')
+    title Instalación
+  body
+    .container
+      .col.s12(style='text-align: justify')
+        h3 Instalación
+        p
+          | Para iniciar el proceso de instalación es necesario obtener el instalador el cual puede ser descargado desde 
+          a(href='', download='') Potencial Minero - Addin
+          |  Una vez descargado, iniciar el instalador haciendo clic izquierdo sobre el archivo "PotencialMinero.esriaddin". Esto inicia el instalador:
+        .center-align
+          img.responsive-img.z-depth-4(src='instalador.png')
+        br
+        p
+          | Luego de iniciar el instalador, deberá dar clic izquierdo en "Install Add-in"; la instalación finaliza y se despliega la ventana "Instalación satisfactoria", clic en "Aceptar".
+        .center-align
+          img.responsive-img.z-depth-4(src='satisfactorio.png')
+        br
+        p
+          | Ingresar a ArcMap (reiniciar en caso tenga una sesión abierta de ArcMap) e iniciar el add-in haciendo clic derecho sobre un espacio en blanco de la barra de menú y ubicar la opción “Potencial Minero”; a continuación se despliega el complemento.
+        .center-align
+          img.responsive-img.z-depth-4(src='arcmapIniciar.png')
+        br
+        .center-align
+          img.responsive-img.z-depth-4(src='add-inn-barra.png')
+          .card-content
+            p Visualización del Add-in de Potencial Minero dentro de ArcMap
+    script(src='http://code.jquery.com/jquery-3.2.1.min.js', integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=', crossorigin='anonymous')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js')
