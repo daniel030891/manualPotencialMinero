@@ -2,6 +2,7 @@ doctype html
 html
   head
     meta(name='viewport', content='width=device-width, initial-scale=1.0, user-scalable=no')
+    link(href='https://fonts.googleapis.com/icon?family=Material+Icons', rel='stylesheet')
     meta(charset='utf-8')
     link(rel='stylesheet', type='text/css', href='app.css')
     title Componentes
@@ -9,12 +10,54 @@ html
     .container
       .col.s12(style='text-align: justify')
         h3 Componentes
-        p
-          | Herramientas que componen el Add-inn para determinar el Potencial Minero.
+        p Herramientas que componen el Add-inn para determinar el Potencial Minero.
         br
         .center-align
           img.responsive-img.z-depth-4(src='add-inn-barra.png')
           .card-content
-            
+        br
+        table.bordered.highlight
+          thead
+            tr
+              th(align='centre') ITEM
+              th(align='centre') DESCRIPCIÓN
+              th(align='centre') ESTADO
+          tbody
+            tr
+              td
+                img(src='iniciarSesion.png')
+              td Permite la gestión de usuarios y el acceso a herramientas
+              td
+                a#desabilitado.btn.tooltipped(data-position='top', data-delay='50', data-tooltip='Desabilitado')
+                  i.Small.material-icons.white-text do_not_disturb_alt
+            tr
+              td
+                img(src='crearDirectorios.png')
+              td
+                | Permite la creación del espacio de trabajo en donde se realizará las operaciones.
+              td
+                a#habilitado.btn.tooltipped(data-position='top', data-delay='50', data-tooltip='Habilitado')
+                  i.Small.material-icons.white-text check
+            tr
+              td Cargar Información
+              td
+                | Permite la carga de información estandarizada de las variables cartográficas, dentro de la estructura generada. Se realizan procesos de consistencia tabular.
+              td
+                a#habilitado.btn.tooltipped(data-position='top', data-delay='50', data-tooltip='Habilitado')
+                  i.Small.material-icons.white-text check
+            tr
+              td Determinar el Potencial Minero
+              td
+                | Genera el conjunto de procesamiento necesario para estimar el potencial minero. Exporta resultados em formatos raster y feature class.
+              td
+                a#habilitado.btn.tooltipped(data-position='top', data-delay='50', data-tooltip='Habilitado')
+                  i.Small.material-icons.white-text check
+            tr
+              td
+                img(src='manualUsuario.png')
+              td Manual de usuario
+              td
+                a#habilitado.btn.tooltipped(data-position='top', data-delay='50', data-tooltip='Habilitado')
+                  i.Small.material-icons.white-text check
     script(src='http://code.jquery.com/jquery-3.2.1.min.js', integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=', crossorigin='anonymous')
     script(src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js')

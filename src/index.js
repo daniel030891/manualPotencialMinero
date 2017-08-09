@@ -13,6 +13,7 @@ page('/instalacion', function(ctx, next){
 })
 
 page('/componentes', function(ctx, next){
+	main.height = '750px'
 	main.src = '/componentes'
 })
 
